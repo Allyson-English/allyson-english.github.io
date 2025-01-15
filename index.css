@@ -1,8 +1,15 @@
-html,
+html {
+  margin: 1%;
+  height: 100%;
+  margin: auto;
+  overflow-y: scroll;
+}
+
 body {
   background: #fff1fc;
   font-family: monospace, monospace;
-  margin: 1%;
+  position: absolute;
+  margin: 5%;
 }
 
 a.nav:link,
@@ -24,21 +31,30 @@ a.nav:active {
   padding: 0.25px;
 }
 
-.container {
-  position: relative;
-}
-
-.footer-links {
-  position: fixed;
-  bottom: 5%;
-  left: 2%;
+a.nav1:active {
+  background: #8accff;
+  /*  background: #8accff; saving this bc it's alec's favorite color*/
+  border-radius: 4px;
+  color: black;
+  text-decoration: underline;
+  padding: 0.25px;
 }
 
 .topright {
-  position: fixed;
   top: 5%;
+  left: 2%;
+}
 
-  left: 4%;
+.blogPost {
+  position: relative;
+  left: 2%;
+}
+
+.body {
+  top: 13%;
+  left: 10%;
+  right: 10%;
+  line-height: 1.6;
 }
 
 .footer-words {
@@ -51,6 +67,7 @@ a.nav:active {
 #icon {
   color: black;
   font-size: 150%;
+  text-decoration: none;
 }
 
 .fa-github:hover {
