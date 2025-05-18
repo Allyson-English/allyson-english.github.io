@@ -1,28 +1,111 @@
 html {
-  margin: 1%;
+  /* margin: 1%; */
   height: 100%;
   margin: auto;
   overflow-y: scroll;
 }
 
+
 body {
-  background: #fff1fc;
+  margin: 0;
+  /* font-family: 'Georgia', serif; */
   font-family: monospace, monospace;
-  position: absolute;
-  margin: 5%;
+  /* background: #fff5f1; */
+    background: #fff1fc;
+  color: #000;
 }
 
-a.nav:link,
-a.nav:hover,
-a.nav:active,
-a.nav:visited {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #000;
+}
+
+/* .imgContainer {
+  width: 30%;
+  height: 100%;
+  background-color: pink;
+} */
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 10%;
+  height: auto;
+  /* margin-right: 1; */
+  vertical-align: middle;
+}
+
+.container {
+    width: 1v;
+    height: 2v;
+    border: 1px solid #000;
+}
+
+
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+    .main {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .main-article {
+      background: #f2d675;
+      padding: 1rem;
+    }
+    .main-article h2 {
+      margin-top: 0.5rem;
+    }
+    .main-article p {
+      font-size: 0.95rem;
+    }
+    .main-article a {
+      float: right;
+      font-weight: bold;
+    }
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #000;
+      padding: 1rem;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card p {
+      font-size: 0.9rem;
+    }
+    .card a {
+      font-weight: bold;
+      font-size: 0.85rem;
+    }
+
+a:link,
+a:hover,
+a:active,
+a:visited {
   color: black;
   text-decoration: none;
   cursor: pointer; /* Pointer/hand icon */
 }
 
-a.nav:hover,
-a.nav:active {
+a:hover,
+a:active {
   background: #b8d3ff;
   /*  background: #8accff; saving this bc it's alec's favorite color*/
   border-radius: 4px;
@@ -31,7 +114,7 @@ a.nav:active {
   padding: 0.25px;
 }
 
-a.nav1:active {
+a:active {
   background: #8accff;
   /*  background: #8accff; saving this bc it's alec's favorite color*/
   border-radius: 4px;
@@ -50,12 +133,6 @@ a.nav1:active {
   left: 2%;
 }
 
-.body {
-  top: 13%;
-  left: 10%;
-  right: 10%;
-  line-height: 1.6;
-}
 
 .footer-words {
   position: fixed;
@@ -80,3 +157,5 @@ a.nav1:active {
   border-radius: 4px;
   padding: 0.25px;
 }
+
+
